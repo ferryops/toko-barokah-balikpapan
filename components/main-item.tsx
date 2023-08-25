@@ -58,7 +58,7 @@ export default function MainItem() {
             <Image alt="Breathing app icon" className="rounded-full w-10 h-11 bg-black" src="/images/breathing-app-icon.jpeg" />
             <div className="flex flex-col">
               <p className="text-tiny text-white/60">Breathing App</p>
-              <p className="text-tiny text-white/60">Get a good nights sleep.</p>
+              <p className="text-tiny text-white/60">Get a good nights slee.</p>
             </div>
           </div>
           <Button radius="full" size="sm">
