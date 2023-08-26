@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.tokobarokah.biz.id
+
+# Sitemaps
+Sitemap: https://www.tokobarokah.biz.id/sitemap.xml
