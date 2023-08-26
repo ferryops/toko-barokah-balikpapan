@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import MainItem from "@/components/main-item";
+import "aos/dist/aos.css";
 
 export default function Home() {
   return (
