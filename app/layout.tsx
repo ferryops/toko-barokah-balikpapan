@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  generator: siteConfig.generator,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
@@ -32,15 +35,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">{children}</main>
-            <footer className="w-full flex items-center justify-center py-3">
+            <main className="container mx-auto max-w-7xl pt-16 flex-grow">{children}</main>
+            <footer className="w-full flex flex-col md:flex-row items-center justify-center py-3">
+              <span className="text-default-600">Copyright © 2024 &nbsp;</span>
               <Link
-                isExternal
                 className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                title="nextui.org homepage"
+                href="https://www.tokobarokah.biz.id/"
+                title="Toko Barokah Balikpapan"
               >
-                <span className="text-default-600">Copyright © 2023</span>
                 <p className="text-primary">Toko Barokah Balikpapan</p>
               </Link>
             </footer>
